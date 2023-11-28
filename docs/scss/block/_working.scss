@@ -1,0 +1,118 @@
+.working {
+    position: relative;
+    background: $white;
+    z-index: 0;
+    padding-bottom: 130px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 30%;
+        height: 100%;
+        background-color: $orange-bg;
+        z-index: -8;
+    }
+
+    &__mask {
+        background: $orange-bg;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 396px;
+        height: 589px;
+        z-index: -1;
+    }
+
+    &__title {
+        padding-top: 110px;
+        margin-bottom: 40px;
+        width: 210px;
+        position: relative;
+        font-size: 36px;
+        line-height: 120%;
+        @extend %bold;
+    }
+
+    &__title::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: -39px;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+    }
+
+    &__list {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid #F4F4F4;
+        background: $white2;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+
+    }
+
+    &__list::before {
+        content: "";
+        position: absolute;
+        right: -50px;
+        top: -52px;
+        background-image: url(../img/ulement.svg);
+        width: 96px;
+        height: 96px;
+
+    }
+
+    &__item {
+        padding-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    &__number {
+        position: relative;
+        top: 14px;
+        font-size: 36px;
+        line-height: 140%;
+        z-index: 1;
+    }
+
+    &__number::before {
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: -6px;
+        width: 21px;
+        height: 80px;
+        background: rgb(249, 187, 136);
+        z-index: -8;
+    }
+
+    &__item-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-title {
+
+        padding-bottom: 8px;
+        width: 174px;
+        font-size: 18px;
+        @extend %bold;
+    }
+
+    &__item-text {
+        width: 174px;
+
+        line-height: 170%;
+    }
+}

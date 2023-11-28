@@ -1,0 +1,301 @@
+.typesStairs {
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    &__heading-title {
+        position: relative;
+        font-size: 36px;
+        @extend %bold;
+
+    }
+
+    &__heading-title::before {
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 18px;
+        background: $orange-bg;
+        z-index: -8;
+        top: 21px;
+        right: 197px;
+
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+
+    &__btn-prev path:hover,
+    &__btn-next path:hover {
+        cursor: pointer;
+        stroke: $dark;
+        transition: all .2s ease-in-out;
+
+    }
+
+
+    &__stick {
+        height: 34px;
+        width: 1.8px;
+        background-color: $dark;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    &__card {
+        border: 2px solid $white;
+        width: 386px;
+        height: 540px;
+
+        text-align: center;
+    }
+
+    &__img {
+        height: 335px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img1 {
+        width: 294px;
+
+    }
+
+    &__info {
+        // padding-top: 20px;
+        background-color: $white;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 221px;
+    }
+
+    &__title {
+
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+        padding-top: 20px;
+        padding-bottom: 6px;
+    }
+
+    &__text {
+        @extend %regular;
+        padding-bottom: 15px;
+
+    }
+
+    &__text span {
+
+        padding-left: 7px;
+        font-size: 23px;
+        line-height: 160%;
+        @extend %semibold;
+    }
+
+    &__btn {
+        padding-bottom: 56px;
+    }
+
+    &__btn button {
+        width: 191px;
+        height: 50px;
+        border-radius: 2px;
+        background: $orange-btn;
+        color: $white2;
+    }
+
+    &__btn button:hover {
+        background: $dark;
+        transition: all .2s ease-in-out;
+    }
+}
+
+
+.typesStairs__swiper-pagination1 {
+    display: none;
+}
+
+.typesStairs__swiper-pagination {
+
+
+
+
+    
+
+
+}
+
+.typesStairs__swiper-pagination .swiper-pagination-bullet {
+    
+    
+    margin-right: 18px;
+    width: 9px;
+    height: 9px;
+    background: $orange-bg;
+    border-radius: 0%;
+    opacity: inherit;
+}
+
+.typesStairs__swiper-pagination .swiper-pagination-bullet-active {
+    position: relative;
+    bottom: 0px;
+    width: 17px;
+    height: 17px;
+    background: $dark;
+}
+
+
+
+
+
+
+
+@media (max-width: 1440px) {
+    .typesStairs {
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {
+            width: 100%;
+
+        }
+
+        &__img {
+            width: 100%;
+            height: 335px;
+        }
+
+        &__img1 {
+
+            width: 220px;
+        }
+
+        &__info {}
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {}
+
+        &__btn {}
+    }
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+}
+
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .typesStairs {
+
+        &__heading {}
+
+        &__heading-title {}
+
+        &__nav {}
+
+        &__btn-prev {}
+
+        &__stick {}
+
+        &__btn-next {}
+
+        &__swiper {}
+
+        &__swiper-wrapper {}
+
+        &__swiper-slide {}
+
+        &__card {
+            width: 100%;
+
+        }
+
+        &__img {
+            width: 100%;
+            height: 335px;
+        }
+
+        &__img1 {
+
+            width: 220px;
+        }
+
+        &__info {}
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {}
+
+        &__btn {}
+    }
+
+    .swiper {}
+
+    .swiper-wrapper {}
+
+    .swiper-slide {}
+
+}
+
+@media (max-width: 576px) {
+    .typesStairs__nav {
+        display: none;
+    }
+
+    .typesStairs__swiper-pagination1 {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .typesStairs__swiper-pagination {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        
+    }
+}
+
+@media (max-width: 400px) {}
